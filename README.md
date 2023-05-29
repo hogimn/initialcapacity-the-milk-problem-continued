@@ -71,7 +71,7 @@ application in both local and production environments.
 1.  Populate development data with a product scenario.
 
     ```bash
-    PGPASSWORD=milk psql -h'127.0.0.1' -Umilk -f applications/products-server/src/test/resources/scenarios/products.sql milk_development
+    PGPASSWORD=milk psql -h'127.0.0.1' -p 5432 -Umilk -f applications/products-server/src/test/resources/scenarios/products.sql milk_development
     ```
 
 ### Run tests
